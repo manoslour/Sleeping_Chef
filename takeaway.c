@@ -10,7 +10,8 @@ int main(){
     sem_init(&mutex, 0, 0);
 
     pthread_create(&p_chef, NULL, chef, NULL);
-    for(i = 0; i < MAX_CUSTOMERS; i++) {        
+
+    for(i = 0; i < MAX_CUSTOMERS; i++) {   
         pthread_create(&p_customers[i], NULL, customer, NULL);
         if( (i+1)%3 == 0) {
             sleep(3);
@@ -18,6 +19,6 @@ int main(){
         }
     }
 
-    sleep(10);
+    sleep(6);
     printf("Main thread exiting\n");
 }

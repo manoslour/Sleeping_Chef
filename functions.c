@@ -10,7 +10,7 @@ void *chef(void *param) {
         printf("Chef is ready to take order\n"); // 4
         sem_post(&sem_chef); // 5
         sem_wait(&mutex); // 9
-        printf("Order is ready\n"); // 10
+        printf("Order is ready\n\n"); // 10
     }
 }
 

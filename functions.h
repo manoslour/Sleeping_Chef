@@ -10,5 +10,4 @@ extern sem_t sem_customers;
 extern sem_t mutex;
 
 void *chef(void *param);
-
 void *customer(void *param);
