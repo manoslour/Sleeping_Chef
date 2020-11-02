@@ -5,7 +5,10 @@
 
 #define MAX_CUSTOMERS 9
 
-/* Handles chef actions*/
+extern sem_t sem_chef;
+extern sem_t sem_customers;
+extern sem_t mutex;
+
 void *chef(void *param);
-/* Handles customer actions*/
+
 void *customer(void *param);
