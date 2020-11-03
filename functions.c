@@ -16,7 +16,6 @@ void *chef(void *param) {
 
 void *customer(void *thread_id) {
     long tid = (long) thread_id;
-    //printf("*Customer%ld entered souvlatzidiko*\n", tid+1); // 1
     sem_post(&sem_customers); // 2
     sem_wait(&sem_chef); // 6
     printf("Customer%ld is giving order\n", tid+1); // 7
