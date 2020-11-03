@@ -8,6 +8,6 @@ Three semaphores are being used:
 
 The order of code execution in highlighted in comments.  
 
-To run:  
+#### Run Takeaway:  
 $ make all  
 $ ./demo
